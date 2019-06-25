@@ -110,7 +110,7 @@ mysql -u root -proot -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY
 ##
 echo -e "\t-install php7.2."
 
-apt-get install -y php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-gd php-gettext php7.2-json php7.2-mbstring php7.2-mcrypt php7.2-mysql php7.2-xml php7.2-xmlrpc php7.2-zip >> $LOG_FILE 2>&1
+apt-get install -y php7.2 php7.2-cli php7.2-common php7.2-curl php7.2-gd php-gettext php7.2-json php7.2-mbstring php7.2-mcrypt php7.2-mysql php7.2-mysqli php7.2-xml php7.2-xmlrpc php7.2-zip >> $LOG_FILE 2>&1
 
 ##
 # PhpMyAdmin
