@@ -121,13 +121,13 @@ echo -e "\t-install phpmyadmin."
 cd /usr/share
 mkdir phpmyadmin
 
-wget https://files.phpmyadmin.net/phpMyAdmin/4.5.4.1/phpMyAdmin-4.5.4.1-all-languages.zip >> $LOG_FILE 2>&1
+wget https://files.phpmyadmin.net/phpMyAdmin/4.9.0/phpMyAdmin-4.9.0-all-languages.zip >> $LOG_FILE 2>&1
 
-7z x phpMyAdmin-4.5.4.1-all-languages.zip >> $LOG_FILE 2>&1
-mv phpMyAdmin-4.5.4.1-all-languages/* phpmyadmin
+7z x phpMyAdmin-4.9.0-all-languages.zip >> $LOG_FILE 2>&1
+mv phpMyAdmin-4.9.0-all-languages/* phpmyadmin
 
-rm phpMyAdmin-4.5.4.1-all-languages.zip
-rm -rf phpMyAdmin-4.5.4.1-all-languages
+rm phpMyAdmin-4.9.0-all-languages.zip
+rm -rf phpMyAdmin-4.9.0-all-languages
 
 chmod -R 0755 phpmyadmin
 
