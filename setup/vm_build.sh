@@ -149,6 +149,10 @@ echo -e "\t-configure server."
 a2enmod rewrite >> $LOG_FILE 2>&1
 sed -i "s/AllowOverride None/AllowOverride All/g" /etc/apache2/apache2.conf
 
+# Enable Modules
+phpenmod mbstring
+phpenmod mysqli
+
 # Server Name
 echo "Servername ${SERVER_NAME}" >> /etc/apache2/conf-available/servername.conf
 a2enconf servername >> $LOG_FILE 2>&1
