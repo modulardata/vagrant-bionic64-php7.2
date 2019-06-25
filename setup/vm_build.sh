@@ -84,7 +84,7 @@ apt-get update -qq >> $LOG_FILE 2>&1
 echo -e "\t-install apache2.4."
 
 apt-get install -y apache2 apache2-doc apache2-utils >> $LOG_FILE 2>&1
-apt-get install -y libapache2-mod-php7.1 >> $LOG_FILE 2>&1
+apt-get install -y libapache2-mod-php7.2 >> $LOG_FILE 2>&1
 
 ##
 # Maria DB 10
